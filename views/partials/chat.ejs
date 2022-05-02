@@ -1,0 +1,24 @@
+<head>
+    <script src="/chat.js" defer></script>
+</head>
+
+<div class="container-fluid">
+    <legend>Centro de Mensajes</legend>
+          <!--<form action="/productos"  method="post">-->
+          <form onsubmit="addChat(this)">
+              <div class="mb-3">
+              <label for="email" class="form-label">Nombre</label>
+              <input class="form-control" type="email" id="email" name ="email" required>
+              </div>
+              <div class="mb-3">
+              <label for="text" class="form-label">Mensaje</label>
+              <input class="form-control" type="text" id="text" name ="text" required>
+              </div>
+              <div class="mb-3">
+                <button type="submit"  class="btn btn-primary mb-3"> Enviar </button>
+              </div>
+            </form>
+
+    <div scope="row" id="text_set"></div> 
+
+</div>
